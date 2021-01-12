@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="description" content="Ozobia Nwadibia's portfolio" />
+    <meta name="author" content="Ozobia Nwadibia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- BOOTSTRAP CSS 
+---------------------------------------------------------------->
+    <link rel="stylesheet" href="../src/css/portfolio.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- FONTS & FONTAWESOME
+------------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <!-- FAVICON
+---------------------------------------------------->
+    <link rel="icon" href="./assets/images/Ozobia.png" />
+    <title>Ozobia's React Portfolio</title>
+</head>
+
+<body>
+    <script>
+        // Insert this script as-is in your index.html right after the <body> tag.
+        // This will help to prevent a flash if dark mode is the default.
+        (function() {
+            var classNameDark = "dark-mode";
+            var classNameLight = "light-mode";
+
+            function setClassOnDocumentBody(darkMode) {
+                document.body.classList.add(
+                    darkMode ? classNameDark : classNameLight
+                );
+                document.body.classList.remove(
+                    darkMode ? classNameLight : classNameDark
+                );
+            }
+
+            var preferDarkQuery = "(prefers-color-scheme: dark)";
+            var mql = window.matchMedia(preferDarkQuery);
+            var supportsColorSchemeQuery = mql.media === preferDarkQuery;
+            var localStorageTheme = null;
+            try {
+                localStorageTheme = localStorage.getItem("darkMode");
+            } catch (err) {}
+            var localStorageExists = localStorageTheme !== null;
+            if (localStorageExists) {
+                localStorageTheme = JSON.parse(localStorageTheme);
+            }
+
+            // Determine the source of truth
+            if (localStorageExists) {
+                // source of truth from localStorage
+                setClassOnDocumentBody(localStorageTheme);
+            } else if (supportsColorSchemeQuery) {
+                // source of truth from system
+                setClassOnDocumentBody(mql.matches);
+                localStorage.setItem("darkMode", mql.matches);
+            } else {
+                // source of truth from document.body
+                var isDarkMode = document.body.classList.contains(classNameDark);
+                localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
+            }
+        })();
+    </script>
+    <noscript>You need to enable JavaScript to run this website.</noscript>
+
+    <div id="root"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../src/js/portfolio.js"></script>
+</body>
+
+</html>
