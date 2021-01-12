@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/my_react_portfolio/static/css/main.8054ced4.chunk.css",
+    "main.js": "/my_react_portfolio/static/js/main.334265fc.chunk.js",
+    "main.js.map": "/my_react_portfolio/static/js/main.334265fc.chunk.js.map",
+    "runtime-main.js": "/my_react_portfolio/static/js/runtime-main.898aff9c.js",
+    "runtime-main.js.map": "/my_react_portfolio/static/js/runtime-main.898aff9c.js.map",
+    "static/js/2.b4c24590.chunk.js": "/my_react_portfolio/static/js/2.b4c24590.chunk.js",
+    "static/js/2.b4c24590.chunk.js.map": "/my_react_portfolio/static/js/2.b4c24590.chunk.js.map",
+    "static/js/3.1a36ab92.chunk.js": "/my_react_portfolio/static/js/3.1a36ab92.chunk.js",
+    "static/js/3.1a36ab92.chunk.js.map": "/my_react_portfolio/static/js/3.1a36ab92.chunk.js.map",
+    "index.html": "/my_react_portfolio/index.html",
+    "static/css/main.8054ced4.chunk.css.map": "/my_react_portfolio/static/css/main.8054ced4.chunk.css.map",
+    "static/js/2.b4c24590.chunk.js.LICENSE.txt": "/my_react_portfolio/static/js/2.b4c24590.chunk.js.LICENSE.txt",
+    "static/media/Ozobia.a01e0499.png": "/my_react_portfolio/static/media/Ozobia.a01e0499.png",
+    "static/media/bookmarks.8125d91c.png": "/my_react_portfolio/static/media/bookmarks.8125d91c.png",
+    "static/media/employee_directory.2ae69934.png": "/my_react_portfolio/static/media/employee_directory.2ae69934.png",
+    "static/media/kudos.6055a35d.png": "/my_react_portfolio/static/media/kudos.6055a35d.png",
+    "static/media/measurements.355c3835.png": "/my_react_portfolio/static/media/measurements.355c3835.png",
+    "static/media/score.4acbc68c.png": "/my_react_portfolio/static/media/score.4acbc68c.png",
+    "static/media/the-team.b2cd0116.png": "/my_react_portfolio/static/media/the-team.b2cd0116.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.898aff9c.js",
+    "static/js/2.b4c24590.chunk.js",
+    "static/css/main.8054ced4.chunk.css",
+    "static/js/main.334265fc.chunk.js"
+  ]
+}
