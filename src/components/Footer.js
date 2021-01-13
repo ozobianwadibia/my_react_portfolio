@@ -7,10 +7,7 @@ function Footer() {
     <footer id="footer" role="contentinfo">
       <div className="container-fluid">
         <div className="col-md-12">
-          <p>
-            Copyright &copy; {thisYear.getFullYear()} Ozobia Nwadibia. All
-            rights reserved.
-          </p>
+          <p>Copyright &copy; {thisYear.getFullYear()} Ozobia Nwadibia</p>
         </div>
       </div>
     </footer>
